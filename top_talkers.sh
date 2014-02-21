@@ -28,7 +28,7 @@ TOP_TALKERS=`psql -U pmacct -t -c "CREATE TEMPORARY TABLE tt_temp AS \
 INSERT INTO tt_temp \
     SELECT SUM(bytes),as_dst AS asn \
     FROM $MY_TABLE \
-    WHERE stamp_inserted BETWEEN LOCALTIMESTAMP - INTERVAL '7 days' AND LOCALTIMESTAMP \
+    WHERE stamp_inserted BETWEEN LOCALTIMESTAMP - INTERVAL '7 days' AND LOCALTIMESTAMP AND as_dst != $MY_ASN \
     GROUP BY as_dst \
     ORDER BY sum DESC \
     LIMIT $NUM_TT; \
