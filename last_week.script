@@ -1,0 +1,14 @@
+set term png small
+set data style lines
+set grid
+set yrange [ 0 : ]
+set xrange [ 0: ] reverse 
+
+set style line 1 lt 2 lc rgb "green" lw 3
+set style line 2 lt 2 lc rgb "blue" lw 2
+set title "AS_SEDME , Past 1 Week"
+set xlabel "hours ago"
+set ylabel "mbit/sec"
+set multiplot
+plot "/tmp/in.txt" using ($1/300):($2/300/1048576) ls 1 title "Inbound", "/tmp/out.txt" using ($1/300):($2/300/1048576) ls 2 title "Earthbound" 
+

@@ -1,0 +1,15 @@
+# Table you setup using pmacct
+MY_TABLE=acct_v7
+
+# Where you want the static HTML/images to go
+HTML_PATH=/var/www/html/tt
+
+# Your AS Number
+MY_ASN=33668
+
+# Number of top talkers you'd like to see
+NUM_TT=10
+
+#Set the below if you're using a password for postgres
+#PGPASSWORD="arealsmartpwd"
+#export PGPASSWORD
