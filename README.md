@@ -6,7 +6,7 @@ Just a proof of concept!
 A few bash scripts that build on an example from pmacct for turning pmacct data into graphs
 
 Builds heavily upon the script gnuplot-example.sh found in the examples directory of the
-pmacct tarball, from (http://www.pmacct.net)[]
+pmacct tarball, from http://www.pmacct.net
 
 
 Assumptions
