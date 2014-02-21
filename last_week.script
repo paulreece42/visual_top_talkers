@@ -10,5 +10,5 @@ set title "AS_SEDME , Past 1 Week"
 set xlabel "hours ago"
 set ylabel "mbit/sec"
 set multiplot
-plot "/tmp/in.txt" using ($1/300):($2/300/1048576) ls 1 title "Inbound", "/tmp/out.txt" using ($1/300):($2/300/1048576) ls 2 title "Earthbound" 
+plot "/tmp/in.txt" using ($1/300):($2/300/1048576) ls 1 title "Inbound", "/tmp/out.txt" using ($1/300):($2/300/1048576) ls 2 title "Outbound" 
 

@@ -26,3 +26,4 @@ Assumptions
 - Doing 300 second snapshots
 - You want to see the past week
 - I *highly* recommend using pg_partman to partition this table, especially as it assumes 5 minute snaps
+- You have gnuplot installed
