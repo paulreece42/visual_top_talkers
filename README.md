@@ -8,6 +8,13 @@ A few bash scripts that build on an example from pmacct for turning pmacct data 
 Builds heavily upon the script gnuplot-example.sh found in the examples directory of the
 pmacct tarball, from http://www.pmacct.net
 
+Included a snapshot of the http://bgp.potaroo.net/cidr/autnums.html in postgres format too,
+this is from Feb 2014 and *does not include* asdot AS names! I plan on fixing this one day
+
+I will not include a dump of the internet routing table, because it's always changing.
+
+For your very own dump of the internet's current routing table to map things to ASN, see:
+https://gist.github.com/paulreece42/9002883
 
 Assumptions
 -----------
