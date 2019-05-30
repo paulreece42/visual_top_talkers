@@ -1,3 +1,12 @@
+Update, 2019
+============
+
+Don't use this, I wrote it in an afternoon 6 years ago, and you can get all this and
+more easily/better by just using logstash's netflow modules
+
+https://www.elastic.co/guide/en/logstash/current/netflow-module.html
+
+
 visual_top_talkers
 ==================
 
